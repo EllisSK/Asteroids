@@ -45,7 +45,7 @@ def main():
                 sys.exit(0)
             for s_item in shots:
                 if a_item.collision_check(s_item):
-                    a_item.kill()
+                    a_item.split()
                     s_item.kill()
 
         pygame.display.flip()        
